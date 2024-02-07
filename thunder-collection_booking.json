@@ -1,0 +1,409 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "booking",
+    "dateExported": "2023-09-14T12:24:34.568Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "hotel",
+            "containerId": "",
+            "created": "2023-07-31T15:59:26.104Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "992dafd7-57b2-4a18-a133-30f697e91dcd",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-07-31T15:59:59.422Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-07-31T17:43:20.417Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "046e8357-0cb8-4095-acdd-2a52b6de02fc",
+            "name": "useradmin",
+            "containerId": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "created": "2023-08-01T05:44:02.636Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "63a7deea-47d0-4707-bb36-5ec8194b7f43",
+            "name": "rooms",
+            "containerId": "",
+            "created": "2023-08-01T11:54:06.957Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b7b2dd8e-ff70-4b9b-94b5-c7070b300b7e",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "createhotel",
+            "url": "http://localhost:8000/api/hotels/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-31T10:17:04.908Z",
+            "modified": "2023-08-03T15:44:12.685Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\"name\": \"Hotel Radha\",\n  \"type\": \"apartments\",\n  \"city\": \"mumbai\",\n  \"address\": \"123 Main Street\",\n  \"distance\": \"2 miles\",\n  \"desc\": \"A luxurious hotel in the heart of New York\",\n  \"title\":\"the best in the world\",\n  \"chepeastprice\": 250\n    \n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9f2fb73a-d29f-410b-a29c-6e857ffd4ca6",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "updatehotel",
+            "url": "http://localhost:3000/api/hotels/64c7b5b22da451ac91faf7f4",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-07-31T11:12:52.244Z",
+            "modified": "2023-08-01T15:01:48.662Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\"name\": \"hotel taj mumbai9\"\n\n    \n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a90f5412-05ec-40a8-b550-878c9c13aba1",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "deletehotel",
+            "url": "http://localhost:8000/api/hotels/64c7b5b22da451ac91faf7f4",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-07-31T11:43:06.526Z",
+            "modified": "2023-08-01T15:02:24.058Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d5612cf4-ca07-4fc9-a0f8-b46646de7885",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "findhotel",
+            "url": "http://localhost:8000/api/hotels/find/64cbcb4ca6c3d2c76a914239",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-31T11:48:10.132Z",
+            "modified": "2023-08-03T15:52:04.136Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "68b6d023-fd96-49af-bc95-ee7195fcd97d",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "allhotels",
+            "url": "http://localhost:8000/api/hotels",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-31T11:53:07.667Z",
+            "modified": "2023-08-03T15:43:34.391Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "109f3447-1abe-4b28-84a8-bd864e6d25a8",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "992dafd7-57b2-4a18-a133-30f697e91dcd",
+            "name": "register",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-07-31T16:27:38.842Z",
+            "modified": "2023-08-09T18:00:31.666Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \n  \"city\"\n: \n\"ganjam\",\n\"country\"\n: \n\"India\",\n\"email\"\n: \n\"jagabokkhai@gmail.com\",\n\"img\"\n: \n\"blob:http://localhost:3000/acd710ab-1e29-4b9a-9e66-701aa15f04a7\",\n\"password\"\n: \n\"1234\",\n\"phone\"\n: \n\"63711118692\",\n\"username\"\n: \n\"sonuuuuuu\"\n  \n\n\n  \n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fb46bec2-ace2-4abd-b67b-787eef7afb48",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "992dafd7-57b2-4a18-a133-30f697e91dcd",
+            "name": "login",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-07-31T16:45:59.291Z",
+            "modified": "2023-08-07T12:36:58.042Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"sonu\",\n \n  \"password\": \"1235\"\n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ded95f24-cfb5-4c7f-a6dc-bb466bdfaca5",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "name": "userupdate",
+            "url": "http://localhost:8000/api/users/64c7e76c3b3d8c6e80bd8549",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-07-31T17:43:39.577Z",
+            "modified": "2023-08-01T15:03:40.129Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"johoe\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8745a059-7c6a-4aad-8058-43c95845bb74",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "name": "userdelete",
+            "url": "http://localhost:8000/api/users/64d0c714324c1d10ece9ba9c",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-07-31T17:43:54.510Z",
+            "modified": "2023-08-08T06:42:48.697Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9debb420-e23d-49c8-9875-f039742f2f4d",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "name": "usershow",
+            "url": "http://localhost:8000/api/users/64c7f576618ea27aeffd3c2d",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-07-31T17:44:23.235Z",
+            "modified": "2023-08-11T03:25:56.662Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9b015406-50be-460f-98a8-2dff1fb5cff4",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "bc33bb8b-1037-4116-8c1b-72b16b905154",
+            "name": "alluser",
+            "url": "http://localhost:8000/api/users",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-07-31T17:44:33.627Z",
+            "modified": "2023-08-07T12:35:59.040Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ebe61a8e-8d56-4920-83d1-b3192b0585cb",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "046e8357-0cb8-4095-acdd-2a52b6de02fc",
+            "name": "upd",
+            "url": "http://localhost:8000/api/users/checkuser/64c91eab6e58a9f533b61849",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-08-01T05:44:35.942Z",
+            "modified": "2023-08-07T12:41:39.323Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"sonu\"\n \n  \n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "10a98f34-caa8-4062-8aee-a6f8038dfe34",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "63a7deea-47d0-4707-bb36-5ec8194b7f43",
+            "name": "createroom",
+            "url": "http://localhost:8000/api/rooms/64cbcb4ca6c3d2c76a914239",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-08-01T11:54:18.204Z",
+            "modified": "2023-08-04T09:57:25.738Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Deluxe gita jnana clone\",\n  \"price\": 150,\n  \"maxPeople\": 2,\n  \"desc\": \"A spacious and luxurious room with modern amenities.\",\n  \"roomNumbers\": [\n    {\n      \"number\": 189\n     \n    },\n    {\n      \"number\": 199\n      \n    }\n  ]\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "93340b50-3d36-427a-a7c2-84410cc95a9b",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "63a7deea-47d0-4707-bb36-5ec8194b7f43",
+            "name": "deleteroom",
+            "url": "http://localhost:3000/api/rooms/64c8f36510989419c0d0268e/64c8f36510989419c0d0268e",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2023-08-01T11:54:33.888Z",
+            "modified": "2023-08-01T12:19:06.783Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f7edfe03-3ab6-40ac-a43b-a27fb9191621",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "count city",
+            "url": "http://localhost:8000/api/hotels/countcity?cities=bhubaneswar,berhampur,delhi,mumbai",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-08-01T13:58:28.334Z",
+            "modified": "2023-08-01T15:02:52.946Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "cities",
+                    "value": "bhubaneswar,berhampur,delhi,mumbai",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e1deaa69-cfdd-407c-b4ea-baf0871e0567",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "20577af5-1ef3-4332-acc1-fd0d8cfdf097",
+            "name": "count type ",
+            "url": "http://localhost:8000/api/hotels/typecount",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-08-01T16:11:24.396Z",
+            "modified": "2023-08-01T16:19:08.905Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8690733e-3bd5-43ec-a28a-137b82b51dbf",
+            "colId": "67fe5d5e-921c-496e-af2e-4745dad8e222",
+            "containerId": "63a7deea-47d0-4707-bb36-5ec8194b7f43",
+            "name": "gethotelroom",
+            "url": "http://localhost:8000/api/rooms",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-08-03T15:42:09.604Z",
+            "modified": "2023-08-10T14:03:29.458Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

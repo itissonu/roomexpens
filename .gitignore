@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+
+# Build files
+build/
+dist/
+out/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache and temporary files
+.cache/
+.tmp/
+*.tmp
+*.temp
+*.bak
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+packages/
+
+# OS generated files
+.DS_Store
+Thumbs.db

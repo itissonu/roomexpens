@@ -1,0 +1,133 @@
+.searchdesc {
+    /* Add styles for the container here if needed */
+    display: flex;
+    flex-direction: column;
+  flex: 2;
+}
+.searchitmcont{
+    display: flex;
+    border: 1px solid grey;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 17px;
+    margin: 16px;
+    align-items: center;
+    box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2), /* Main shadow */
+    0 1px 2px rgba(0, 0, 0, 0.2), /* Inner shadow */
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.searchimg{
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+}
+h2 {
+    color: #277595; /* Example color for heading */
+}
+
+.landmark {
+    color: #0d0e0e; /* Example color for landmark */
+    margin: 5px;
+}
+
+.free-buside {
+    color: #f6fbfe; /* Example color for free buside */
+    background-color: #5ea355; /* Example background color for highlighting */
+    padding: 1px; /* Add some padding to make the highlight more visible */
+    max-width: max-content;
+    font-size: 14px;
+    border-radius: 7px;
+    margin: 5px;
+
+}
+
+.room-details {
+    color: #353232; /* Example color for room details */
+    margin: 5px;
+}
+
+/* Add more styles for other classes here if needed */
+
+.facilities {
+    color: #111211; 
+    font-weight: bold;
+    margin: 5px;
+}
+
+.nearby-amenities {
+    color: #0c0c0c; /* Example color for nearby amenities */
+margin: 5px;
+}
+
+.free-cancellation {
+    color: #13971a;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 5px;
+}
+.cancel{
+    color: #13971a;
+    font-weight: bold; 
+}
+.searchdetails{
+    flex: 1;
+
+}
+
+
+.searchdetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: column;
+  }
+  
+  .rating{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 21px;
+  }
+  .rating>span{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .amountd {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+   
+    /* Adjust the gap as needed */
+  }
+  
+
+    .price{
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 86px;
+    }
+  .rating button
+  {
+    background-color: #3498db; /* Bluish color for the buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .amountd button {
+    background-color: #3498db; /* Bluish color for the buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    padding: 9px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4px;
+    width: 100%;
+  }
+  
+  .rating button:hover,
+  .amountd button:hover {
+    background-color: #2980b9; /* Darker bluish color on button hover */
+  }

@@ -1,0 +1,198 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Notebook",
+    "dateExported": "2023-09-14T12:24:24.427Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "63f51878-021e-4d7b-844a-4de984f7b99a",
+            "name": "Authentication",
+            "containerId": "",
+            "created": "2023-03-28T14:26:44.737Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "580a5b8e-9bdb-41c9-98e6-4cda9a202ae0",
+            "name": "notes",
+            "containerId": "",
+            "created": "2023-03-30T05:47:00.904Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "d9b33b5e-8392-4300-84e0-05e3b5b36d31",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "63f51878-021e-4d7b-844a-4de984f7b99a",
+            "name": "creat a new user",
+            "url": "localhost:5000/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-28T14:27:07.289Z",
+            "modified": "2023-07-11T17:47:52.278Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"name\":\"sonjjjggsflgkahu\",\n\"email\":\"sonuskbjghghgahu1@gmail.com\",\n\"password\":\"soggfjhjhkjgnusahu1\"\n\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "11f8e486-6ac5-4eec-b26b-6a7b3191fca7",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "63f51878-021e-4d7b-844a-4de984f7b99a",
+            "name": "user login credentials",
+            "url": "localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-29T15:04:51.698Z",
+            "modified": "2023-04-10T18:45:28.895Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n\"email\":\"soumyaggranjansahu@gmail.com\",\n\"password\":\"srsggrsrsrs\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f613a8c-2501-4bd2-8ad1-d1e44d8bfa4f",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "63f51878-021e-4d7b-844a-4de984f7b99a",
+            "name": "get user data",
+            "url": "localhost:5000/api/auth/getuser",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-30T05:17:16.740Z",
+            "modified": "2023-04-10T18:45:07.729Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQyNTFmNWM4MDE2MWRhZmMzOGE5MTViIn0sImlhdCI6MTY4MDE1NDQ2MH0.FIC8d1e2DLrzGmAGFrjMWQt3k1MksYG9dfY7rcSiSeM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e2239a3c-b954-435b-9135-ba9c57e4e64e",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "580a5b8e-9bdb-41c9-98e6-4cda9a202ae0",
+            "name": "fetch all notes",
+            "url": "localhost:5000/api/notes/fetchallnotes",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-30T06:11:33.637Z",
+            "modified": "2023-04-04T20:09:10.511Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQyYzgzYzc1MGYyNGYzZDhmNmNlYjk5In0sImlhdCI6MTY4MDYzODkxOX0.Y449OcdDLva3hKWwPOyJeIeVM3CZ4MG-XIEmFuWztus"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3f5d0bde-ea8a-4bcb-b596-7973ad6b839b",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "580a5b8e-9bdb-41c9-98e6-4cda9a202ae0",
+            "name": "add note",
+            "url": "localhost:5000/api/notes/addnote",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-03-30T07:41:38.414Z",
+            "modified": "2023-04-04T20:27:52.819Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQyYzgzYzc1MGYyNGYzZDhmNmNlYjk5In0sImlhdCI6MTY4MDYzODkxOX0.Y449OcdDLva3hKWwPOyJeIeVM3CZ4MG-XIEmFuWztus"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\" sundar sundar rabjanae\",\n  \"description\":\"thhghivcvs is a desc\",\n  \"tag\":\"perhghsonvcval\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "98568289-40e0-45f3-9631-f6caee338ce0",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "580a5b8e-9bdb-41c9-98e6-4cda9a202ae0",
+            "name": "update note",
+            "url": "localhost:5000/api/notes/updatenote/642f8b2d7fb0c9f81973fa04",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-03-30T10:17:06.521Z",
+            "modified": "2023-04-07T04:28:37.049Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQyYzgzYzc1MGYyNGYzZDhmNmNlYjk5In0sImlhdCI6MTY4MDYzODkxOX0.Y449OcdDLva3hKWwPOyJeIeVM3CZ4MG-XIEmFuWztus"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \n\"title\": \"sonu sonu sonu ghh gggg\",\n    \"description\": \"sonu suuu\",\n    \"tag\": \"ssss\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be8b78b1-1678-47ba-80b8-8cdbd2016889",
+            "colId": "09b74142-d362-4cdc-982f-ed259dad558d",
+            "containerId": "580a5b8e-9bdb-41c9-98e6-4cda9a202ae0",
+            "name": "delete note",
+            "url": "localhost:5000/api/notes/deletenote/642c83c750f24f3d8f6ceb99",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-03-30T10:29:12.895Z",
+            "modified": "2023-04-07T04:10:42.571Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQyYzgzYzc1MGYyNGYzZDhmNmNlYjk5In0sImlhdCI6MTY4MDYzODkxOX0.Y449OcdDLva3hKWwPOyJeIeVM3CZ4MG-XIEmFuWztus"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\" sundar sundar rabjanae\",\n  \"description\":\"thhghivcvs is a desc\",\n  \"tag\":\"perhghsonvcval\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

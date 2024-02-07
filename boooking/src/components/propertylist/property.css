@@ -1,0 +1,64 @@
+.plcontainer{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    }
+    .pllistimg{
+        width: 100%;
+        object-fit: cover;
+        height: 150px;
+    }
+    .pllistcard{
+        flex: 1;
+        position: relative;
+        color: aliceblue;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 189px;
+        cursor: pointer;
+    }
+    .pltitle> h1{
+        text-transform: capitalize;
+        font-size: 21px;
+      color: rgb(251, 246, 246);
+      margin-left: 50px;
+    }
+    .pltitle> h2{
+        font-size: 16px;
+        font-weight: 300;
+        color: rgb(243, 236, 236);
+        margin-left: 50px;
+       
+    }
+    .pllistcard {
+        position: relative;
+        overflow: hidden;
+        transition: opacity 0.3s;
+      }
+      
+      .pllistcard:hover {
+        opacity: 0.8; /* Change the opacity value as desired */
+      }
+      
+      .pltitle {
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(69 66 66 / 22%); /* Adjust the background color and opacity */
+        color: white;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        width: 200px;
+      }
+      
+      .pllistcard:hover .pltitle {
+        opacity: 1;
+        transform: translate(-50%, -70%); /* Adjust the value to control the title's vertical position */
+      }
+      
+      

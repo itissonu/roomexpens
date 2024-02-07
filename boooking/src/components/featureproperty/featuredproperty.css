@@ -1,0 +1,48 @@
+.featureprop{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    }
+    .featuredpropimg{
+        width: 100%;
+        object-fit: cover;
+        flex: 1;
+        transition: opacity 0.5s;
+    }
+    .featuredpropitm{
+        display: flex;
+        flex-direction: column;
+        color: rgb(7, 8, 8);
+        border-radius: 10px;
+        flex: 1;
+    }
+    .featuredpropitm:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .featuredpropitm:hover .featuredpropimg {
+      opacity: 0.8;
+    }
+  .fname{
+    font-weight: bold;
+    margin: 2px;
+  }
+  .fcity{
+    font-weight: 300;
+    margin: 2px;
+  }
+  .fprice{
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .frating>button{
+    background-color: rgb(25, 54, 87);
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    margin-right: 8px   ;
+    border: none;
+  }

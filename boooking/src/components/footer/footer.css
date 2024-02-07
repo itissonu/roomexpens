@@ -1,0 +1,25 @@
+.footer{
+    width: 100%;
+    max-width: 1080px;
+    color: rgb(34, 28, 28);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    margin: auto  ;
+}
+.footeritem{
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.copyright{
+    margin-left: 700px;
+}
+.li{
+    font-weight: 300;
+    color: grey;
+}

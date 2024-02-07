@@ -1,0 +1,30 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  
+  .banner-image {
+    width: 100%;
+    display: block;
+  }
+  .banner-container> img{
+    height: 90px;
+  }
+  .banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .banner-offer {
+    color: white;
+    font-size: 24px;
+  }
+  

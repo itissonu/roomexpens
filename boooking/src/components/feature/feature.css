@@ -1,0 +1,29 @@
+.feature{
+width: 100%;
+max-width: 1080px;
+display: flex;
+justify-content: space-between;
+gap: 20px;
+
+}
+.featuredimg{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.featureditm{
+    position: relative;
+    color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 240px;
+    flex: 1;
+}
+.feturetitles{
+    position: absolute;
+    bottom:-12px;
+    left: 20px;
+}
+.feturetitles>h2{
+    color: white;
+}

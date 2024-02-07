@@ -1,0 +1,130 @@
+.headContainer{
+    width: 1080px;
+    max-width: 100%;
+   
+  margin: 20px 0px 70px 0px;
+    
+   
+    
+}
+.header{
+    background-color: yellowgreen;
+    color: white;
+    justify-content: center;
+      display: flex;
+
+}
+.headerlist{
+    display: flex;
+    flex-direction: row; /* Display items in a row */
+    gap: 40px;
+    align-items: center;
+    
+}
+.haditem{
+    display:flex;
+    align-items: center;
+    grid-area: 10px;
+}
+.active {
+    border:1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.headerbutton{
+    color: rgb(9, 9, 9);
+    padding: 5px;
+    border-radius: 2px;
+    background-color: olive;
+    cursor: pointer;
+    font-weight: 500;
+}
+.headitem span{
+    margin-left:4px;
+}
+.headerTitle{
+    margin-top: 39px;
+}
+.headersearch{
+    background-color: white;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: rgb(44, 42, 42);
+    position: relative;
+    top: 94px;
+    height: 32px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1080px;
+}
+.headersearchitembtn{
+    background-color: rgb(32 140 184);
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+.Headsearchinput{
+ border: none;
+ outline: none;
+}
+.Headsearchtext{
+ background-color: #ffffff;
+    cursor: pointer;
+}
+ .headerSearchitem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .calender{
+    top: 54px;
+    position: absolute;
+    left: 310px;
+    z-index: 2;
+ }
+ .options{
+    top:54px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the start of the container */
+    background-color: #ffffff; /* Add a white background color */
+    border-radius: 8px; /* Add border-radius for a rounded look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    color: grey;
+    z-index: 2;
+ }
+ .optionsitem{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 200px;
+    transition: .03s;
+ }
+.optcounterbutton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(69, 97, 161);
+    color: rgb(9, 80, 138);
+    cursor: pointer;
+    margin:5px;
+}
+.optcounterbutton:disabled{
+    cursor: not-allowed;
+}
+.showOptionnumber{
+   padding: 10px 2px;
+    width: 100%;
+    max-width: 20px;
+    
+}
+
+
+
+

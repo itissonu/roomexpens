@@ -1,0 +1,252 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "expen",
+    "dateExported": "2023-09-29T18:55:10.097Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e93f216a-5906-4656-af5a-3d0927c305d6",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "registration",
+            "url": "http://localhost:8000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-09-06T10:30:50.627Z",
+            "modified": "2023-09-18T09:16:03.030Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"sonu\",\n  \"username\": \"sonuekhii\",\n  \"email\": \"sonuun@example.com\",\n  \"password\": \"12345678900\", \n  \"photo\": \"https://example.com/profile.jpg\", \n  \"selectedroom\": \"6507d711c9dc87b802a30bf1\"\n \n}\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d516e14-7373-4bf9-ba53-769264f509a1",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-06T12:10:17.482Z",
+            "modified": "2023-09-18T04:54:13.182Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"sonuekhi\",\n  \"password\":\"1234567890\",\n  \"selectedroom\":\"6507d711c9dc87b802a30bf1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "296883d0-4605-4cfb-abea-38015fdb419a",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "roomreg",
+            "url": "http://localhost:8000/api/auth/registerroom",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-18T04:45:44.867Z",
+            "modified": "2023-09-18T04:50:25.801Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Room A\",\r\n    \"members\": [\"64f860fce0e13dc62b231e78\", \"64f862a6fbfaf89f5e04ee1a\"]\r\n   \r\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9eddeeda-5d27-42d3-9ac8-ceb384fce350",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "alluser",
+            "url": "http://localhost:8000/api/user/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-09-18T05:16:01.693Z",
+            "modified": "2023-09-18T05:17:13.588Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d31210ec-7343-4d3f-bc25-5eca2f4a71a2",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "allrooms",
+            "url": "http://localhost:8000/api/user/allrooms/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-09-18T05:27:23.417Z",
+            "modified": "2023-09-18T05:28:05.048Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b3be66f5-a44e-49db-bd13-1db0e71151c5",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "finduserbyid",
+            "url": "http://localhost:8000/api/user/6507d7aec9dc87b802a30bf3",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-09-18T05:40:02.838Z",
+            "modified": "2023-09-18T05:52:59.776Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b0e0dd65-8e72-4e61-9b28-3d8e80152309",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "findusersbyroom",
+            "url": "http://localhost:8000/api/user/userbyroom/6507d711c9dc87b802a30bf1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-09-18T08:08:50.795Z",
+            "modified": "2023-09-18T08:10:47.991Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3495ab7b-0568-4753-82d0-397a62fcf590",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "addexpense",
+            "url": "http://localhost:8000/api/expense/add-expense/64f871664771e57c4260d6f0",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-09-18T08:55:57.912Z",
+            "modified": "2023-09-18T10:14:01.690Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "\n\n{\n  \"description\": \"bread\",\n  \"amount\": 500.00,\n  \"date\": \"2023-09-05\",\n  \"photo\": \"expense.jpg\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "edf131fa-9ed0-4ac7-b56e-9aa789dd1b45",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "deleteexpense",
+            "url": "http://localhost:8000/api/expense/delete-expense/64f871664771e57c4260d6f0/650823590b5e3001320770e0",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-09-18T09:26:25.506Z",
+            "modified": "2023-09-18T10:17:27.210Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ffdaa8db-6088-481f-b960-8e99b7195af0",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "getexpensesbyuser",
+            "url": "http://localhost:8000/api/expense/user-expenses/64f871664771e57c4260d6f0",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-09-18T10:00:21.343Z",
+            "modified": "2023-09-18T10:16:19.464Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9d69a799-25e7-4b3d-b42f-c943fbad164a",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "totalamountuser",
+            "url": "http://localhost:8000/api/expense/user-expenses-total/6507d7aec9dc87b802a30bf3",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-09-18T10:08:37.281Z",
+            "modified": "2023-09-18T10:09:16.801Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "297b19a7-ff70-4e48-804b-4ea42bc5ea52",
+            "colId": "bbd71b6b-b398-44b1-b0f8-12609211f185",
+            "containerId": "",
+            "name": "gettotalamount",
+            "url": "http://localhost:8000/api/expense/total-expenses",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-09-18T10:12:38.765Z",
+            "modified": "2023-09-18T10:13:29.867Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

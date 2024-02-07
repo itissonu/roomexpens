@@ -1,0 +1,91 @@
+.listcompo{
+    width: 100%;
+    max-width: 1080px;
+    gap: 10;
+    display: flex;
+}
+.listcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.searchlist{
+flex: 1;
+background-color: rgb(247, 190, 19);
+height: 460px;
+position: sticky;
+top: 10px;
+border-radius: 10px;
+display: block;
+}
+.resultbox{
+    flex: 3;
+}
+
+ .h1search{
+    padding: 5px;
+    margin: 5px;
+ }
+ .lsitm>label{
+    
+    margin-left: 9px;
+ }
+ .lsitm{
+   
+    display: flex;
+    flex-direction: column;
+    
+ }
+ 
+ .lsitm>input{
+    padding: 5px;
+    height: 30px;
+    border: none;
+    margin: 5px 7px 7px 5px;
+    border-radius: 5px;
+ }
+ .Headsearchtex {
+    cursor: pointer;
+    background-color: aliceblue;
+    padding: 5px;
+    height: 30px;
+    margin-left: 7px;
+    border-radius: 4px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+ }
+ .checkin{
+    margin: 7px;
+    padding: 5px;
+ }
+ 
+.lsOptions{
+    padding: 10px;
+  }
+  .opt{
+    margin-left: 7px;
+  }
+  
+  .lsOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+  }
+  
+  .lsOptionInput{
+    width: 50px;
+  }
+  
+  .searchlist> button{
+    padding: 10px;
+    background-color: #0071c2;
+    color: white;
+    border: none;
+    width: 95%;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 8px;
+  }
